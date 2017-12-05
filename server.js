@@ -19,7 +19,7 @@ app.use(express.static("app/public"));
 
 // Routes
 // ====================================================
-//require("./app/routes/api-routes.js")(app);
+require("./app/routes/api-routes.js")(app);
 
 // Starts server listening on PORT
 app.listen(PORT, function () {

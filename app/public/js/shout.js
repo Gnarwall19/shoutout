@@ -43,6 +43,9 @@ $.get("/api/all", function (data) {
             row.append("<p>" + data[i].author + " shouted: </p>");
             row.append("<p>" + data[i].body + "</p>");
             row.append("<p>At " + moment(data[i].created_at).format("h:mma on dddd") + "</p>");
+
+            $("#shout-area").prepend(row);
+
         }
     }
 });
