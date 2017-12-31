@@ -1,2 +1,1 @@
-DROP DATABASE IF EXISTS `shoutout_db`;
-CREATE DATABASE `shoutout_db`;
+USE amm73tshwg4q21qt
