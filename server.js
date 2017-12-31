@@ -24,4 +24,5 @@ require("./app/routes/api-routes.js")(app);
 // Starts server listening on PORT
 app.listen(PORT, function () {
     console.log("ShoutOut listening on PORT " + PORT);
+    console.log(process.env.DB_CONNECTION);
 });
