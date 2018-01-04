@@ -11,7 +11,8 @@ var connection;
 
 // Creates MySQL connection using 
 if (process.env.JAWSDB_URL) {
-    connection = mysql.createConnection("mysql://rsjgutsfmvpl78bc:rpofb40i6aapa3rd@b4e9xxkxnpu2v96i.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/amm73tshwg4q21qt");
+    var sequelize = new Sequelize("mysql://rsjgutsfmvpl78bc:rpofb40i6aapa3rd@b4e9xxkxnpu2v96i.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/amm73tshwg4q21qt");
+    connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
     var sequelize = new Sequelize("shoutout_db", "root", "delilah", {
         host: "localhost",
